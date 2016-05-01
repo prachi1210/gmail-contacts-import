@@ -1,0 +1,7 @@
+<?php
+	
+	$clientId = 'clientId'; 
+	$clientSecret = 'clientSecret'; 
+	$redirectUrl = 'http://localhost/login-with-google-using-php';  //return url (url to script)
+	$homeUrl = 'http://localhost/login-with-google-using-php';  //return to home
+?>
