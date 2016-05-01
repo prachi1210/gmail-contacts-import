@@ -18,7 +18,7 @@
 		$userProfile = $google_oauthV2->userinfo->get();
 		
 		$gUser = checkUser('google',$userProfile['id'],$userProfile['given_name'],$userProfile['family_name'],$userProfile['email'],$userProfile['gender'],$userProfile['locale'],$userProfile['link'],$userProfile['picture']);
-		$_SESSION['google_data'] = $userProfile; // Storing Google User Data in Session
+		$_SESSION['google_data'] = $userProfile;
 		header("location: account.php");
 		$_SESSION['token'] = $gClient->getAccessToken();
 	} else {
