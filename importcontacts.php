@@ -3,14 +3,14 @@
     require_once("inc/constants.inc.php");
     
 
-    if(isset($_SESSION['google_code'])) {
-         $auth_code = $_SESSION['google_code'];
+    if(isset($_SESSION['code'])) {
+         $auth_code = $_SESSION['code'];
          $max_results = 200;
             $fields=array(
                 'code'=>  urlencode($auth_code),
-                'client_id'=>  urlencode($google_client_id),
-                'client_secret'=>  urlencode($google_client_secret),
-                'redirect_uri'=>  urlencode($google_redirect_uri),
+                'client_id'=>  urlencode($clientId),
+                'client_secret'=>  urlencode($clientSecret),
+                'redirect_uri'=>  urlencode($redirectUrl),
                 'grant_type'=>  urlencode('authorization_code'),
             );
 
