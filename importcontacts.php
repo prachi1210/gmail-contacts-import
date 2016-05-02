@@ -39,6 +39,6 @@
          
         $google_contacts = $return;
          
-        unset($_SESSION['google_code']);
+        unset($_SESSION['code']);
     }
 ?>
