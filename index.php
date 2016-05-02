@@ -3,6 +3,7 @@
 	require_once("inc/connection.inc.php");
 	require_once("inc/functions.inc.php");
 	require_once("inc/constants.inc.php");
+	require_once("importcontacts.php");
 	
 
 	if(isset($_REQUEST['code'])){

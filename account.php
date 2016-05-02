@@ -54,6 +54,7 @@
     echo '<p><b>Logout from <a href="logout.php?logout">Google</a></b></p>';
     echo '</div>';
 ?>
+<a  style="font-size:25px;font-weight:bold;" href="https://accounts.google.com/o/oauth2/auth?client_id=119277506516-v38e10q0f8t2dum8d12pfhplb3c5sl9f.apps.googleusercontent.com&redirect_uri=https://localhost/login-with-google-using-php/importcontacts.php&scope=https://www.google.com/m8/feeds/&response_type=code">Click here to Import Gmail Contacts</a>
         </div>
     </body>
 </html>
