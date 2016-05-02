@@ -1,7 +1,8 @@
 <?php
 	require_once('connection.inc.php');
-	$tbl_name='users';
-	function checkUser($oauth_provider,$oauth_uid,$fname,$lname,$email,$gender,$locale,$link,$picture){
+	
+	function checkUser($connection, $oauth_provider,$oauth_uid,$fname,$lname,$email,$gender,$locale,$link,$picture){
+		$tbl_name='users';
 		$q1= "SELECT * FROM $tbl_name WHERE `oauth_provider`= '$oauth_provider' AND `oauth_uid`='$oauth_uid'";
 						
 		$q1_run = mysqli_query($connection,$q1);
