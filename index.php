@@ -3,9 +3,10 @@
 	require_once("inc/connection.inc.php");
 	require_once("inc/functions.inc.php");
 	require_once("inc/constants.inc.php");
-
+	
 
 	if(isset($_REQUEST['code'])){
+		
 		$gClient->authenticate();
 		$_SESSION['token'] = $gClient->getAccessToken();
 		header('Location: ' . filter_var($redirectUrl, FILTER_SANITIZE_URL));

@@ -16,22 +16,22 @@
             }
             .wrapper{width:600px; margin-left:auto;margin-right:auto;}
             .welcome_txt{
-            	margin: 20px;
-            	background-color: #EBEBEB;
-            	padding: 10px;
-            	border: #D6D6D6 solid 1px;
-            	-moz-border-radius:5px;
-            	-webkit-border-radius:5px;
-            	border-radius:5px;
+                margin: 20px;
+                background-color: #EBEBEB;
+                padding: 10px;
+                border: #D6D6D6 solid 1px;
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                border-radius:5px;
             }
             .google_box{
-            	margin: 20px;
-            	background-color: #FFF0DD;
-            	padding: 10px;
-            	border: #F7CFCF solid 1px;
-            	-moz-border-radius:5px;
-            	-webkit-border-radius:5px;
-            	border-radius:5px;
+                margin: 20px;
+                background-color: #FFF0DD;
+                padding: 10px;
+                border: #F7CFCF solid 1px;
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                border-radius:5px;
             }
             .google_box .image{ text-align:center;}
         </style>

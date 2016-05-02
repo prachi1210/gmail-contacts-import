@@ -20,4 +20,24 @@
 		$result = mysqli_fetch_assoc($query_run);
 		return $result;
 	}
+
+	function get_curl($url, $post = "") {
+		$curl = curl_init();
+		curl_setopt($curl, CURLOPT_URL, $url);
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+		curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 5);
+		if ($post != "") {
+			curl_setopt($curl, CURLOPT_POST, 5);
+			curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
+		}
+		curl_setopt($curl, CURLOPT_USERAGENT, $userAgent);
+		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, TRUE);
+		curl_setopt($curl, CURLOPT_AUTOREFERER, TRUE);
+		curl_setopt($curl, CURLOPT_TIMEOUT, 10);
+		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);
+		
+		$contents = curl_exec($curl);
+		curl_close($curl);
+		return $contents;
+	}
 ?>
