@@ -21,13 +21,18 @@
 		return $result;
 	}
 
-	function curl_file_get_contents($url)
+	function curl_file_get_contents($url, $post ="")
 	{
 		 $curl = curl_init();
 		 
 		 curl_setopt($curl,CURLOPT_URL,$url);   
 		 curl_setopt($curl,CURLOPT_RETURNTRANSFER,TRUE);    
 		 curl_setopt($curl,CURLOPT_CONNECTTIMEOUT,5);  
+		 if ($post != "") 
+		{
+			 curl_setopt($curl, CURLOPT_POST, 5);
+ 			 curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
+ 		}	
 		 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, TRUE);  //To follow any "Location: " header that the server sends as part of the HTTP header.
 		 curl_setopt($curl, CURLOPT_AUTOREFERER, TRUE); //To automatically set the Referer: field in requests where it follows a Location: redirect.
 		 curl_setopt($curl, CURLOPT_TIMEOUT, 10);   

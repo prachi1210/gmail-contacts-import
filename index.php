@@ -1,9 +1,9 @@
 <?php
-	require_once("config.php");
-	require_once("inc/connection.inc.php");
-	require_once("inc/functions.inc.php");
-	require_once("inc/constants.inc.php");
-	require_once("importcontacts.php");
+	require_once('config.php');
+	require_once('inc/connection.inc.php');
+	require_once('inc/functions.inc.php');
+	require_once('inc/constants.inc.php');
+	
 	
 
 	if(isset($_REQUEST['code'])){
