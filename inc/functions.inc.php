@@ -21,6 +21,8 @@
 		return $result;
 	}
 
+	function insertContact($connection, $post)
+
 	function curl_file_get_contents($url, $post ="")
 	{
 		 $curl = curl_init();
