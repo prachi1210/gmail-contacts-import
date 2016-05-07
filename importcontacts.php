@@ -12,7 +12,6 @@
 	$client -> setClientId($clientId);
 	$client -> setClientSecret($clientSecret);
 	$client -> setRedirectUri("http://localhost/login-with-google-using-php/importcontacts.php");
-	$client -> setAccessType('online');
 
 	$client -> setScopes('https://www.google.com/m8/feeds');
 
