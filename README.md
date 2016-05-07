@@ -1,6 +1,6 @@
 # Gmail Contacts Import
 
-A simple web app in PHP allowing login with Google using oAuth 2.0 and import contacts using Contacts 3.0 API.
+A simple web app in PHP allowing login with Google using OAuth 2.0 and import contacts using Contacts 3.0 API.
 Each login is stored in a database.
 
 ####Instructions for setup
