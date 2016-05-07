@@ -17,7 +17,17 @@ Each login is stored in a database.
 
 
 ####Issues to be fixed 
-  createAuthUrl() returns an encoded url with a raw '&' character as a separator.
+  createAuthUrl() returns an encoded url with a raw '&' character as a separator in [importcontacts.php](https://github.com/prachi1210/gmail-contacts-import/blob/master/importcontacts.php).
+   
+     // This thing needs to be fixed 
+      $googleImportUrl = $client -> createAuthUrl();
+      	if (isset($_GET['code'])) 
+      	{
+      
+      		$auth_code = $_GET['code'];
+      		$_SESSION['google_code'] = $auth_code;
+      		header('Location: importcontacts.php');
+      	}
   
   See [Similar Issue on Google APIs Client Library](https://github.com/google/google-api-php-client/issues/76)
   
