@@ -2,7 +2,7 @@
 	session_start();
  	require_once('inc/constants.inc.php');
  	require_once('inc/functions.inc.php');
-	require_once 'google-api-php-client-1.1.7/src/Google/autoload.php';// or wherever autoload.php is located
+	require_once 'google-api-php-client-1.1.7/src/Google/autoload.php';
 	require_once("src/Google_Client.php");
 	require_once("src/contrib/Google_Oauth2Service.php");
 	require_once("inc/constants.inc.php");	
