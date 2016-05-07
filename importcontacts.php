@@ -16,7 +16,7 @@
 	$client -> setScopes('https://www.google.com/m8/feeds');
 
 	$googleImportUrl = $client -> createAuthUrl();
-	echo $googleImportUrl;
+	
 	if (isset($_GET['code'])) 
 	{
 
@@ -62,14 +62,9 @@
 					'email' => $contact['gd$email'][0]['address'],
 				);
 			}				
-		}
-		
-		$_SESSION['contactos']=$google_contacts = $return;		
+		}		
+		$google_contacts = $return;		
 		unset($_SESSION['google_code']);
-	}
-	if(isset($_SESSION['contactos']))
-	{
-		print_r($_SESSION['contactos']);
 	}
 ?>
 
